@@ -9,7 +9,7 @@ blueprint:
     - Double press the **dots 1** or **dots 2** buttons.
     - Press and hold the **dots 1**/**dots 2** buttons. Actions will be executed every **Helper - Hold delay**, but maximum **Helper - Max number of loops** times.
     "
-  source_url: https://gist.github.com/amorfinvdev/ece1a0873759f908429a5c01c8426dce
+  source_url: https://github.com/Bearstorm/HA_Blueprints/blob/main/Automations/Zigbee2MQTT-IKEA_Somrig%20controller.yaml
   domain: automation
   input:
     remote_name:
