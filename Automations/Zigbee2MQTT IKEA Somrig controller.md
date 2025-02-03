@@ -9,4 +9,7 @@ Works with: [Z2M](https://github.com/zigbee2mqtt/hassio-zigbee2mqtt#installation
 Adapted from https://gist.github.com/damru/b2c1c780ffb0ddc084952eb89db9573a
 
 
- 
+## ⚠️The following actions can be triggered using this blueprint:
+
+    - Press and hold the **dots 1**/**dots 2** buttons. Actions will be executed every
+    **Helper - Hold delay**, but maximum **Helper - Max number of loops** times. '
