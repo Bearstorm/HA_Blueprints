@@ -4,7 +4,7 @@ Here you will find Blueprints in one place for Home Assistant. In the md file yo
 
 ## ⚡Did you find a BUG?
 
-Report it on GitHub: https://github.com/Bearstorm/HA_Blueprints/issues/new/choose
+[Open an issue on GitHub](https://github.com/Bearstorm/HA_Blueprints/issues/new/choose).
 
 ## 📫 Here are other links to my channels.
 
