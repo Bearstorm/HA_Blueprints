@@ -1,5 +1,5 @@
 ##  🔵 Zigbee2MQTT IKEA Somrig controller
-Works with: [Z2M](https://github.com/zigbee2mqtt/hassio-zigbee2mqtt#installation)
+It only works with: [Z2M](https://github.com/zigbee2mqtt/hassio-zigbee2mqtt#installation)
 
 [Requires addons to be installed]([MQTT](https://www.home-assistant.io/integrations/mqtt)
     + [Z2M addon](https://www.zigbee2mqtt.io/guide/installation/03_ha_addon.html)).
