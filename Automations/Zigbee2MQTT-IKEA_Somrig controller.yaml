@@ -1,21 +1,28 @@
 blueprint:
   name: IKEA Somrig Controls (Z2M)
-  description: "## Control anything with IKEA Somrig Dimmer remote (v1.0)
+  description: '## Control anything with IKEA Somrig Dimmer remote (v1.0)
+
+
     Only for use with Zigbee2MQTT ([MQTT](https://www.home-assistant.io/integrations/mqtt)
     + [Z2M addon](https://www.zigbee2mqtt.io/guide/installation/03_ha_addon.html)).
+
     Adapted from https://gist.github.com/damru/b2c1c780ffb0ddc084952eb89db9573a
+
     Available controls:
+
     - Press the **dots 1** or **dots 2** buttons
+
     - Double press the **dots 1** or **dots 2** buttons.
-    - Press and hold the **dots 1**/**dots 2** buttons. Actions will be executed every **Helper - Hold delay**, but maximum **Helper - Max number of loops** times.
-    "
-  source_url: https://github.com/Bearstorm/HA_Blueprints/blob/main/Automations/Zigbee2MQTT-IKEA_Somrig%20controller.yaml
+
+    - Press and hold the **dots 1**/**dots 2** buttons. Actions will be executed every
+    **Helper - Hold delay**, but maximum **Helper - Max number of loops** times. '
+  source_url: https://community.home-assistant.io/t/ikea-somrig-shortcut-ikea-e2213-z2m/668612
   domain: automation
   input:
     remote_name:
       name: (Zigbee2MQTT) Remote Name
       description: The name of the controller (e.g. IKEA Somrig).
-      default: ""
+      default: ''
     base_topic:
       name: (Zigbee2MQTT) Base mqtt topic
       description: The topic configured in [Z2M addon](https://www.zigbee2mqtt.io/guide/usage/mqtt_topics_and_messages.html).
@@ -34,27 +41,27 @@ blueprint:
         action: {}
     dots_1_hold_action:
       name: Dots 1 - Hold action
-      description: Choose action(s) to run when **dots 1** button is **pressed and hold**.
+      description: Choose action(s) to run when **dots 1** button is **pressed and
+        hold**.
       default: []
       selector:
         action: {}
     dots_2_hold_action:
       name: Dots 2 - Hold action
-      description: Choose action(s) to run when **dots 2** button is **pressed and hold**.
+      description: Choose action(s) to run when **dots 2** button is **pressed and
+        hold**.
       default: []
       selector:
         action: {}
     dots_1_double_press_action:
       name: Dots 1 - Double press action
-      description:
-        Choose action(s) to run when pressing the **dots 1** button twice.
+      description: Choose action(s) to run when pressing the **dots 1** button twice.
       default: []
       selector:
         action: {}
     dots_2_double_press_action:
       name: Dots 2 - Double press action
-      description:
-        Choose action(s) to run when pressing the **dots 2** button twice.
+      description: Choose action(s) to run when pressing the **dots 2** button twice.
       default: []
       selector:
         action: {}
@@ -85,118 +92,120 @@ trigger_variables:
   z2m_base_topic: !input base_topic
   z2m_controller: !input remote_name
 trigger:
-  - platform: mqtt
-    topic: "{{ z2m_base_topic ~ '/' ~ z2m_controller ~ '/action' }}"
-    payload: "1_short_release"
-    id: press-dots-1-z2m
-  - platform: mqtt
-    topic: "{{ z2m_base_topic ~ '/' ~ z2m_controller ~ '/action' }}"
-    payload: "2_short_release"
-    id: press-dots-2-z2m
-  - platform: mqtt
-    topic: "{{ z2m_base_topic ~ '/' ~ z2m_controller ~ '/action' }}"
-    payload: "1_double_press"
-    id: double-press-dots-1-z2m
-  - platform: mqtt
-    topic: "{{ z2m_base_topic ~ '/' ~ z2m_controller ~ '/action' }}"
-    payload: "2_double_press"
-    id: double-press-dots-2-z2m
-  - platform: mqtt
-    topic: "{{ z2m_base_topic ~ '/' ~ z2m_controller ~ '/action' }}"
-    payload: "1_long_press"
-    id: hold-dots-1-z2m
-  - platform: mqtt
-    topic: "{{ z2m_base_topic ~ '/' ~ z2m_controller ~ '/action' }}"
-    payload: "2_long_press"
-    id: hold-dots-2-z2m
-  - platform: mqtt
-    topic: "{{ z2m_base_topic ~ '/' ~ z2m_controller ~ '/action' }}"
-    payload: "1_long_release"
-    id: release-dots-1-z2m
-  - platform: mqtt
-    topic: "{{ z2m_base_topic ~ '/' ~ z2m_controller ~ '/action' }}"
-    payload: "2_long_release"
-    id: release-dots-2-z2m
+- platform: mqtt
+  topic: '{{ z2m_base_topic ~ ''/'' ~ z2m_controller ~ ''/action'' }}'
+  payload: 1_short_release
+  id: press-dots-1-z2m
+- platform: mqtt
+  topic: '{{ z2m_base_topic ~ ''/'' ~ z2m_controller ~ ''/action'' }}'
+  payload: 2_short_release
+  id: press-dots-2-z2m
+- platform: mqtt
+  topic: '{{ z2m_base_topic ~ ''/'' ~ z2m_controller ~ ''/action'' }}'
+  payload: 1_double_press
+  id: double-press-dots-1-z2m
+- platform: mqtt
+  topic: '{{ z2m_base_topic ~ ''/'' ~ z2m_controller ~ ''/action'' }}'
+  payload: 2_double_press
+  id: double-press-dots-2-z2m
+- platform: mqtt
+  topic: '{{ z2m_base_topic ~ ''/'' ~ z2m_controller ~ ''/action'' }}'
+  payload: 1_long_press
+  id: hold-dots-1-z2m
+- platform: mqtt
+  topic: '{{ z2m_base_topic ~ ''/'' ~ z2m_controller ~ ''/action'' }}'
+  payload: 2_long_press
+  id: hold-dots-2-z2m
+- platform: mqtt
+  topic: '{{ z2m_base_topic ~ ''/'' ~ z2m_controller ~ ''/action'' }}'
+  payload: 1_long_release
+  id: release-dots-1-z2m
+- platform: mqtt
+  topic: '{{ z2m_base_topic ~ ''/'' ~ z2m_controller ~ ''/action'' }}'
+  payload: 2_long_release
+  id: release-dots-2-z2m
 action:
-  - variables:
-      z2m_base_topic: !input base_topic
-      z2m_controller: !input remote_name
-  - choose:
-      - conditions:
-          - condition: trigger
-            id:
-              - press-dots-1-z2m
-        sequence: !input dots_1_press_action
-      - conditions:
-          - condition: trigger
-            id:
-              - press-dots-2-z2m
-        sequence: !input dots_2_press_action
-      - conditions:
-          - condition: trigger
-            id:
-              - double-press-dots-1-z2m
-        sequence: !input dots_1_double_press_action
-      - conditions:
-          - condition: trigger
-            id:
-              - double-press-dots-2-z2m
-        sequence: !input dots_2_double_press_action
-      - conditions:
-          - condition: trigger
-            id:
-              - hold-dots-1-z2m
+- variables:
+    z2m_base_topic: !input base_topic
+    z2m_controller: !input remote_name
+- choose:
+  - conditions:
+    - condition: trigger
+      id:
+      - press-dots-1-z2m
+    sequence: !input dots_1_press_action
+  - conditions:
+    - condition: trigger
+      id:
+      - press-dots-2-z2m
+    sequence: !input dots_2_press_action
+  - conditions:
+    - condition: trigger
+      id:
+      - double-press-dots-1-z2m
+    sequence: !input dots_1_double_press_action
+  - conditions:
+    - condition: trigger
+      id:
+      - double-press-dots-2-z2m
+    sequence: !input dots_2_double_press_action
+  - conditions:
+    - condition: trigger
+      id:
+      - hold-dots-1-z2m
+    sequence:
+    - repeat:
+        count: !input helper_max_loops
         sequence:
-          - repeat:
-              count: !input helper_max_loops
-              sequence:
-                - parallel:
-                    - sequence: !input dots_1_hold_action
-                    - sequence:
-                        - choose:
-                            - conditions:
-                                - condition: trigger
-                                  id:
-                                    - hold-dots-1-z2m
-                              sequence:
-                                - wait_for_trigger:
-                                    - platform: mqtt
-                                      topic: "{{ z2m_base_topic ~ '/' ~ z2m_controller ~ '/action' }}"
-                                      payload: "1_long_release"
-                                  timeout:
-                                    milliseconds: !input helper_hold_delay
-                                  continue_on_timeout: true
-                                - if:
-                                    - condition: template
-                                      value_template: "{{ wait.trigger.idx is defined }}"
-                                  then:
-                                    - stop: button released
-      - conditions:
-          - condition: trigger
-            id:
-              - hold-dots-2-z2m
+        - parallel:
+          - sequence: !input dots_1_hold_action
+          - sequence:
+            - choose:
+              - conditions:
+                - condition: trigger
+                  id:
+                  - hold-dots-1-z2m
+                sequence:
+                - wait_for_trigger:
+                  - platform: mqtt
+                    topic: '{{ z2m_base_topic ~ ''/'' ~ z2m_controller ~ ''/action''
+                      }}'
+                    payload: 1_long_release
+                  timeout:
+                    milliseconds: !input helper_hold_delay
+                  continue_on_timeout: true
+                - if:
+                  - condition: template
+                    value_template: '{{ wait.trigger.idx is defined }}'
+                  then:
+                  - stop: button released
+  - conditions:
+    - condition: trigger
+      id:
+      - hold-dots-2-z2m
+    sequence:
+    - repeat:
+        count: !input helper_max_loops
         sequence:
-          - repeat:
-              count: !input helper_max_loops
-              sequence:
-                - parallel:
-                    - sequence: !input dots_2_hold_action
-                    - sequence:
-                        - choose:
-                            - conditions:
-                                - condition: trigger
-                                  id:
-                                    - hold-dots-2-z2m
-                              sequence:
-                                - wait_for_trigger:
-                                    - platform: mqtt
-                                      topic: "{{ z2m_base_topic ~ '/' ~ z2m_controller ~ '/action' }}"
-                                      payload: "2_long_release"
-                                  timeout:
-                                    milliseconds: !input helper_hold_delay
-                                  continue_on_timeout: true
-                                - if:
-                                    - condition: template
-                                      value_template: "{{ wait.trigger.idx is defined }}"
-                                  then:
-                                    - stop: button released
+        - parallel:
+          - sequence: !input dots_2_hold_action
+          - sequence:
+            - choose:
+              - conditions:
+                - condition: trigger
+                  id:
+                  - hold-dots-2-z2m
+                sequence:
+                - wait_for_trigger:
+                  - platform: mqtt
+                    topic: '{{ z2m_base_topic ~ ''/'' ~ z2m_controller ~ ''/action''
+                      }}'
+                    payload: 2_long_release
+                  timeout:
+                    milliseconds: !input helper_hold_delay
+                  continue_on_timeout: true
+                - if:
+                  - condition: template
+                    value_template: '{{ wait.trigger.idx is defined }}'
+                  then:
+                  - stop: button released
