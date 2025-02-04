@@ -24,6 +24,6 @@ One-time donation link via PayPal: https://www.paypal.com/donate/?hosted_button_
     - Press and hold the dots 1/dots 2 buttons. Actions will be executed every
     Helper - Hold delay, but maximum Helper - Max number of loops times. '
 
-More detailed instructions are[here]([https://github.com/Bearstorm/HA_Blueprints/issues/new/choose](https://github.com/Bearstorm/HA_Blueprints/blob/main/Automations/Zigbee2MQTT%20IKEA%20Somrig%20controller.md)).
+More detailed instructions are[here](https://github.com/Bearstorm/HA_Blueprints/blob/main/Automations/Zigbee2MQTT%20IKEA%20Somrig%20controller.md).
 
 [![Open your Home Assistant instance and show the blueprint import dialog with a specific blueprint pre-filled.](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https://gist.github.com/Bearstorm/eb7565573c76c082bdc4729e6cc3c0c8)
