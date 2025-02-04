@@ -1,19 +1,17 @@
 blueprint:
   name: IKEA Somrig Controls (Z2M)
   description: '## Control anything with IKEA Somrig Dimmer remote (v1.0)
-
-
-    Only for use with Zigbee2MQTT ([MQTT](https://www.home-assistant.io/integrations/mqtt)
-    + [Z2M addon](https://www.zigbee2mqtt.io/guide/installation/03_ha_addon.html)).
-
-    Adapted from https://gist.github.com/damru/b2c1c780ffb0ddc084952eb89db9573a
-
+    ⚠️ Only for use with Zigbee2MQTT ([MQTT](https://www.home-assistant.io/integrations/mqtt)
+    + [Z2M addon](https://www.zigbe2mqtt.io/guide/installation/03_ha_addon.html)).
+    
+    📜 The documentation for this blueprint is available [here](https://github.com/Bearstorm/HA_Blueprints/blob/main/Automations/Zigbee2MQTT%20IKEA%20Somrig%20controller.md).
+    
+    🚀 This blueprint [was adapted from](https://gist.github.com/damru/b2c1c780ffb0ddc084952eb89db9573a).
+    ℹ️ Version 2025.02.04
+    
     Available controls:
-
     - Press the **dots 1** or **dots 2** buttons
-
     - Double press the **dots 1** or **dots 2** buttons.
-
     - Press and hold the **dots 1**/**dots 2** buttons. Actions will be executed every
     **Helper - Hold delay**, but maximum **Helper - Max number of loops** times. '
   source_url: https://community.home-assistant.io/t/ikea-somrig-shortcut-ikea-e2213-z2m/668612
