@@ -15,7 +15,7 @@ YouTube Channel URL: https://www.youtube.com/@Bearstormchannel
 Instagram URL: https://www.instagram.com/bearstormchannel/
 
 ## 😄 You can support my posts here
-One-time donation link via PayPal: https://www.paypal.com/donate/?hosted_button_id=PVATF8G5NZ392
+One-time donation link via PayPal:[here](https://www.paypal.com/donate/?hosted_button_id=PVATF8G5NZ392).
 
 ## 🔵 Zigbee2MQTT IKEA Somrig Controls 
 
