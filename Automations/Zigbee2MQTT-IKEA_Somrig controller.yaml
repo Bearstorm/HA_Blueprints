@@ -7,7 +7,7 @@ blueprint:
     📜 The documentation for this blueprint is available [here](https://github.com/Bearstorm/HA_Blueprints/blob/main/Automations/Zigbee2MQTT%20IKEA%20Somrig%20controller.md).
     
     🚀 This blueprint [was adapted from](https://gist.github.com/damru/b2c1c780ffb0ddc084952eb89db9573a).
-    ℹ️ Version 2025.02.04
+    ℹ️ Updated by Bearstorm 2025.0.04
     
     Available controls:
     - Press the **dots 1** or **dots 2** buttons
