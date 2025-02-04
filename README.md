@@ -18,3 +18,6 @@ Instagram URL: https://www.instagram.com/bearstormchannel/
 One-time donation link via PayPal: https://www.paypal.com/donate/?hosted_button_id=PVATF8G5NZ392
 
 ## 🔵 Zigbee2MQTT IKEA Somrig Controls 
+
+
+[![Open your Home Assistant instance and show the blueprint import dialog with a specific blueprint pre-filled.](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https://gist.github.com/Bearstorm/eb7565573c76c082bdc4729e6cc3c0c8)
