@@ -1,6 +1,6 @@
 blueprint:
-  name: IKEA Somrig Controls (Z2M)
-  description: '## Control anything with IKEA Somrig Dimmer remote (v1.0)
+  name: (Z2M) IKEA Somrig Controls 
+  description: '## Control anything with the IKEA Somrig remote control
     ⚠️ Only for use with Zigbee2MQTT ([MQTT](https://www.home-assistant.io/integrations/mqtt)
     + [Z2M addon](https://www.zigbe2mqtt.io/guide/installation/03_ha_addon.html)).
     
