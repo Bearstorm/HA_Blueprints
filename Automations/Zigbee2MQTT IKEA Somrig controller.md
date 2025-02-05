@@ -11,8 +11,8 @@ It only works with: [Z2M](https://github.com/zigbee2mqtt/hassio-zigbee2mqtt#inst
 
 [![Open your Home Assistant instance and show the blueprint import dialog with a specific blueprint pre-filled.](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https://gist.github.com/Bearstorm/eb7565573c76c082bdc4729e6cc3c0c8)
 
+## :bulb: It is necessary to enter the name of the controlled device from MQTT into Blueprint
 
 
-## ![shipit](https://github.com/user-attachments/assets/52cb51d6-baa2-46e2-a3cf-a005da4b6871) License Notice:
 
-Adapted from https://gist.github.com/damru/b2c1c780ffb0ddc084952eb89db9573a
+💡Adapted from https://gist.github.com/damru/b2c1c780ffb0ddc084952eb89db9573a
