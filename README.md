@@ -19,11 +19,25 @@ One-time donation link via PayPal:[here](https://www.paypal.com/donate/?hosted_b
 
 ## 🔵 Zigbee2MQTT IKEA Somrig Controls 
 
+
+![Somrig image](https://github.com/user-attachments/assets/885dba21-61c8-45f9-a4ea-ab66fe31b362)
+
    ⚠️The following actions can be triggered using this blueprint:
 
-    - Press and hold the dots 1/dots 2 buttons. Actions will be executed every
-    Helper - Hold delay, but maximum Helper - Max number of loops times. '
+    - Press the **one dot** or **two dots** buttons
+
+    - Double press the **one dot** or **two dost** buttons.
+
+    - Press and hold the **one dot** or **two dots** buttons. 
+   
+    - **Helper - Hold delay**, Delay between the execution of the Hold action(s). 
+  
+    - **Helper - Max number of loops** Maximum number of loops when holding down a button. 
 
 More detailed instructions are[here](https://github.com/Bearstorm/HA_Blueprints/blob/main/Automations/Zigbee2MQTT%20IKEA%20Somrig%20controller.md).
 
-[![Open your Home Assistant instance and show the blueprint import dialog with a specific blueprint pre-filled.](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https://gist.github.com/Bearstorm/eb7565573c76c082bdc4729e6cc3c0c8)
+✔ ❌ [older version v1.0 without automatic detection of IKEA SOMRIG devices](https://gist.github.com/Bearstorm/eb7565573c76c082bdc4729e6cc3c0c8).
+
+✅ New version below in the link.
+
+[![Open your Home Assistant instance and show the blueprint import dialog with a specific blueprint pre-filled.](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https://gist.github.com/Bearstorm/72691b3dc94709780326e2275e03d169)
