@@ -19,8 +19,7 @@ One-time donation link via PayPal:[here](https://www.paypal.com/donate/?hosted_b
 
 ## 🔵 Zigbee2MQTT IKEA Somrig Controls 
 
-
-![Somrig image](https://github.com/user-attachments/assets/885dba21-61c8-45f9-a4ea-ab66fe31b362)
+![Somrig image](https://github.com/user-attachments/assets/8c8ddbe8-6779-4957-9920-7905edd19730)
 
    ⚠️The following actions can be triggered using this blueprint:
 
