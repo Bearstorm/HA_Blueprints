@@ -39,6 +39,6 @@ Works with: [Z2M](https://www.zigbee2mqtt.io) and [ZHA](https://www.home-assista
 
 ✔ ❌ Older version v1.0 without automatic search for all IKEA SOMRIG devices  [here](https://gist.github.com/Bearstorm/eb7565573c76c082bdc4729e6cc3c0c8).
 
-✔ ❌ Older version v1.1 with automatic search for all IKEA SOMRIG devices. [here](https://gist.github.com/Bearstorm/0cb9d90b68e6f8df6f5313cdf13aacef).
+✔ ❌ Older version v1.1 with automatic search for all IKEA SOMRIG devices. [here](https://gist.github.com/Bearstorm/72691b3dc94709780326e2275e03d169).
 
 💡Adapted from https://gist.github.com/damru/b2c1c780ffb0ddc084952eb89db9573a
