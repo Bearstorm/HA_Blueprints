@@ -43,4 +43,4 @@ More detailed instructions are[here](https://github.com/Bearstorm/HA_Blueprints/
 [![Downloads](https://img.shields.io/github/downloads/Bearstorm/HA_Blueprints/total)](https://tooomm.github.io/github-release-stats/?username=Bearstorm&repository=HA_Blueprints)
 ![GitHub release downloads](https://img.shields.io/github/downloads/Bearstorm/HA_Blueprints/v1.1/Z2M+ZHA--IKEA_Somrig_controller_v1-2.yaml)
 
-[![Open your Home Assistant instance and show the blueprint import dialog with a specific blueprint pre-filled.](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https://github.com/Bearstorm/HA_Blueprints/releases/download/v.1.1/Z2M+ZHA.-.IKEA_Somrig.controller._v1-2.yaml)
+[![Open your Home Assistant instance and show the blueprint import dialog with a specific blueprint pre-filled.](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https://blueprint-somrig-1-2.bearstorm.workers.dev/)
