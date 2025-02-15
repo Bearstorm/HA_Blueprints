@@ -2,6 +2,10 @@
 
 Here you will find Blueprints in one place for Home Assistant. In the md file you will find important information, you should read it.
 
+![Version](https://img.shields.io/github/v/release/Bearstorm/HA_Blueprints)
+[![Downloads](https://img.shields.io/github/downloads/Bearstorm/HA_Blueprints/total)](https://tooomm.github.io/github-release-stats/?username=Bearstorm&repository=HA_Blueprints)
+
+
 ## ⚡Did you find a BUG?
 
 [Open an issue on GitHub](https://github.com/Bearstorm/HA_Blueprints/issues/new/choose).
