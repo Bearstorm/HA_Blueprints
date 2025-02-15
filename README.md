@@ -2,10 +2,6 @@
 
 Here you will find Blueprints in one place for Home Assistant. In the md file you will find important information, you should read it.
 
-![Version](https://img.shields.io/github/v/release/Bearstorm/HA_Blueprints)
-[![Downloads](https://img.shields.io/github/downloads/Bearstorm/HA_Blueprints/total)](https://tooomm.github.io/github-release-stats/?username=Bearstorm&repository=HA_Blueprints)
-
-
 ## ⚡Did you find a BUG?
 
 [Open an issue on GitHub](https://github.com/Bearstorm/HA_Blueprints/issues/new/choose).
@@ -42,5 +38,8 @@ More detailed instructions are[here](https://github.com/Bearstorm/HA_Blueprints/
 ✔ ❌ [older version v1.0 without automatic detection of IKEA SOMRIG devices](https://gist.github.com/Bearstorm/eb7565573c76c082bdc4729e6cc3c0c8).
 
 ✅ New version below in the link.
+
+![Version](https://img.shields.io/github/v/release/Bearstorm/HA_Blueprints)
+[![Downloads](https://img.shields.io/github/downloads/Bearstorm/HA_Blueprints/total)](https://tooomm.github.io/github-release-stats/?username=Bearstorm&repository=HA_Blueprints)
 
 [![Open your Home Assistant instance and show the blueprint import dialog with a specific blueprint pre-filled.](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https://gist.github.com/Bearstorm/72691b3dc94709780326e2275e03d169)
