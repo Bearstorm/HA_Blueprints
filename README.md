@@ -37,6 +37,8 @@ More detailed instructions are[here](https://github.com/Bearstorm/HA_Blueprints/
 
 ✔ ❌ [older version v1.0 without automatic detection of IKEA SOMRIG devices](https://gist.github.com/Bearstorm/eb7565573c76c082bdc4729e6cc3c0c8).
 
+✔ ❌ [older version v1.1 without automatic detection of IKEA SOMRIG devices](https://gist.github.com/Bearstorm/72691b3dc94709780326e2275e03d169).
+
 ✅ New version below in the link.
 
 ![Version](https://img.shields.io/github/v/release/Bearstorm/HA_Blueprints)
